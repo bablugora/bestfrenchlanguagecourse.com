@@ -89,7 +89,7 @@
             padding: 10px;
             margin-left: 20px;
             border-radius: 100%;
-            color: rgb(25, 111, 74);
+            color: rgb(58, 76, 124);
             font-size: 20px;
             background-color: aliceblue;
         }
@@ -97,7 +97,7 @@
         .n-three ion-icon:hover {
             color: white;
             transition: .50s;
-            background-color: rgb(28, 135, 99);
+            background-color: rgb(63, 128, 207);
         }
 
         .navbaar-two {
@@ -795,12 +795,47 @@ padding: 15px 40px;
    .form-class{
     background-color: yellowgreen;
    }
+           @media screen and (max-width: 768px) {
+            .dropdown-content {
+                position: static;
+                /* Ye content ko ek ke niche ek set kar dega */
+                box-shadow: none;
+                width: 100%;
+                display: none;
+                /* Default band rahega */
+            }
+
+            /* Mobile par click hone par dikhane ke liye hum ek class use kar sakte hain */
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+        }
 
     </style>
     <title>Learn French With Rajesh Sir: Online & Offline</title>
 </head>
 
 <body>
+    <!-- HTML -->
+<div class="testing-banner">
+     website on testing pls contact : +91 7082814430
+</div>
+
+<!-- CSS -->
+<style>
+.testing-banner {
+    background-color: #ffcc00; /* Yellow background */
+    color: #000; /* Black text */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+</style>
     <div class="navbaar">
         <div class="navbaar-body">
             <div class="navbaar-one">
@@ -1120,5 +1155,4 @@ Goal: The main objective of this course is to teach you how to communicate natur
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </html>
