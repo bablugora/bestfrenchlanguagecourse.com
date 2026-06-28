@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French B1 Course - Willkommen Academy</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+        
+        /* Navigation / Header */
+        .course-header {
+            background-image: linear-gradient(rgba(25, 52, 175, 0.9), rgba(25, 52, 175, 0.9)), url('images/academy.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .course-header h1 { font-size: 40px; margin-bottom: 10px; }
+        .course-header p { font-size: 18px; color: #ffcc00; font-weight: bold; }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        /* Course Main Content */
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px; }
+        .main-info { flex: 2; min-width: 300px; }
+        .sidebar-box { flex: 1; min-width: 280px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: fit-content; }
+
+        .section-title { font-size: 26px; color: #1934af; margin-bottom: 15px; border-bottom: 2px solid #ffcc00; padding-bottom: 5px; }
+        .main-info p { font-size: 16px; line-height: 1.6; margin-bottom: 25px; }
+        
+        /* Syllabus List */
+        .syllabus-list { list-style: none; margin-bottom: 30px; }
+        .syllabus-list li { padding: 10px 0; border-bottom: 1px solid #ddd; display: flex; align-items: center; gap: 10px; }
+        .syllabus-list ion-icon { color: green; font-size: 20px; }
+
+        /* Sidebar Details */
+        .sidebar-box h3 { font-size: 22px; margin-bottom: 15px; color: #333; }
+        .price { font-size: 32px; color: #09a726; font-weight: bold; margin-bottom: 20px; }
+        .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; font-size: 15px; }
+        
+        .cta-btn {
+            display: block;
+            background-color: #09a726;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(9, 167, 38, 0.3);
+        }
+        .cta-btn:hover { background-color: #078c1e; }
+
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+    <div class="course-header">
+        <h1>French B1 (Job Level)</h1>
+        <p>Complete International Syllabus (DELF B1 Preparation)</p>
+        <a href="index.html" class="back-btn">&#11013; Back to Home</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="main-info">
+            <h2 class="section-title">Course Overview</h2>
+            
+
+            <h2 class="section-title">What You Will Learn (Syllabus)</h2>
+            <ul class="syllabus-list">
+                <li><ion-icon name="checkmark-circle-outline"></ion-icon> French Alphabets, Pronunciation & Numbers</li>
+                <li><ion-icon name="checkmark-circle-outline"></ion-icon> How to introduce yourself and others formally/informally</li>
+                <li><ion-icon name="checkmark-circle-outline"></ion-icon> Basic Grammar: Present Tense, Articles, Nouns & Adjectives</li>
+                <li><ion-icon name="checkmark-circle-outline"></ion-icon> Daily Conversations: Asking for directions, ordering food, shopping</li>
+                <li><ion-icon name="checkmark-circle-outline"></ion-icon> Mock Tests & Exam patterns for DELF B1 Exam</li>
+            </ul>
+
+            <h2 class="section-title">Why Join This Course?</h2>
+            <p>Humari live classes interactive hoti hain jahan har student par dhyan diya jata hai. Aapko pre-recorded videos ke bharose nahi chhoda jayega. Saath hi aapko weekly assessment aur speaking practice modules bhi milenge.</p>
+        </div>
+
+        <div class="sidebar-box">
+            <h3>Course Features</h3>
+            <div class="price">&#8377; 30,000</div>
+            
+            <div class="detail-row">
+                <span><strong>Duration:</strong></span>
+                <span>4 Months</span>
+            </div>
+            <div class="detail-row">
+                <span><strong>Class Type:</strong></span>
+                <span>Live Online / Offline</span>
+            </div>
+            <div class="detail-row">
+                <span><strong>Materials:</strong></span>
+                <span>Free Books & PDFs</span>
+            </div>
+            <div class="detail-row">
+                <span><strong>Certificate:</strong></span>
+                <span>Yes (Course Completion)</span>
+            </div>
+
+            <a href="https://wa.me/917082814430?text=Hi,%20I%20want%20to%20enroll%20in%20French%20B1%20Course" class="cta-btn">Book Free Demo Class</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
