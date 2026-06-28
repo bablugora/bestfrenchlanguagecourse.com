@@ -1,9 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn French With Rajesh Sir: Online & Offline</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     <style>
         * {
             margin: 0;
@@ -11,851 +15,462 @@
             box-sizing: border-box;
         }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* --- Testing Banner --- */
+        .testing-banner {
+            background-color: #ffcc00;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        /* --- Navbar & Hero Section --- */
         .navbaar {
             width: 100%;
             height: auto;
-            margin: auto;
-            padding-bottom:50px;
+            padding-top: 50px; /* Space for fixed banner */
+            padding-bottom: 50px;
             color: white;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-            background-image: url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
         }
 
         .navbaar-body {
             width: 100%;
             max-width: 1400px;
-            height: auto;
-            margin:0 auto;
-            padding: 0 10px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .navbaar-one {
             width: 100%;
-            height: auto;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            padding:20px 0;
-            gap: 40px;
-
+            justify-content: space-between;
+            padding: 20px 0;
+            gap: 20px;
         }
 
         .n-one {
-            width: 100%;
             max-width: 400px;
-            padding: 20px 0 5px 0;
-            height: auto;
-            
-            a{
-                text-decoration: none;
-            }
-    
         }
 
-        .n-one:hover a {
-            color: rgb(241, 242, 244);
-            transition: 0.5s;
+        .n-one a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .n-one p {
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 5px;
         }
 
         .n-two {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            gap: 10px;
-            padding: 20px 0 5px 0;
-            text-align: center;
-            justify-content:center;
             display: flex;
+            align-items: center;
+            gap: 10px;
         }
-
-        /* .n-two-one { */
-            
 
         .n-two-one ion-icon {
-            font-size: 40px;
-            
+            font-size: 35px;
+            color: #ffcc00;
         }
 
-        .n-three {
-            width: 350px;
-            height: auto;
-            padding: 20px 0 0 0;
-        
-    
+        .n-two-one p {
+            font-size: 14px;
+            margin: 0;
         }
 
         .n-three ion-icon {
             padding: 10px;
-            margin-left: 20px;
-            border-radius: 100%;
+            margin-left: 10px;
+            border-radius: 50%;
             color: rgb(58, 76, 124);
             font-size: 20px;
             background-color: aliceblue;
+            transition: 0.3s;
         }
 
         .n-three ion-icon:hover {
             color: white;
-            transition: .50s;
             background-color: rgb(63, 128, 207);
         }
 
         .navbaar-two {
             width: 100%;
-            height: 80px;
-            margin: auto;
-            font-size: 16px;
             display: flex;
-            padding-top: 10px;
+            flex-wrap: wrap;
             justify-content: space-between;
-            background-color: rgba(236, 147, 147, 0.07);
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow: hidden;
         }
 
-        .navbaar-two-one {
-            background-color: rgb(38, 47, 78);
-            max-width: 80%;
-            height: 50px;
-            padding-top:20px ;
-            border-radius: 0 0 80px 0;
-
-
-
-        }
-
-        .navbaar-two-one li {
+        .navbaar-two-one ul {
             list-style: none;
-            
-            display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .navbaar-two-one a {
             text-decoration: none;
-            padding: 0 45px 0 5px;
+            padding: 15px 20px;
             color: white;
+            display: inline-block;
+            transition: 0.3s;
+        }
 
+        .navbaar-two-one a:hover {
+            background-color: rgba(255,255,255,0.2);
         }
 
         .navbaar-two-two {
-            width: 25%;
-            height: 55px;
-            text-align: center;
-
-            border-radius: 80px 0 0 0;
             background-color: rgb(21, 135, 84);
-            
-
+            height: 100%;
         }
 
-        .navbaar-two-two button {
-            margin: 15px;
-            background: none;
-
-            border: none;
-        }
-
-        .navbaar-two-two button a {
+        .navbaar-two-two a {
+            display: inline-block;
+            padding: 15px 25px;
             text-decoration: none;
             color: white;
+            font-weight: bold;
+        }
+
+        /* --- Hero Content Area --- */
+        .hero-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 30px;
         }
 
         .header-one {
-            width: 100%;
-            margin:10px;
-            transform: translatey(-200px);
-            height: auto;
-            text-align: center;
-            
+            flex: 1;
+            min-width: 300px;
+        }
 
-            
+        .header-one h1 {
+            font-size: 45px;
+            margin: 15px 0;
+            line-height: 1.2;
         }
 
         .header-one p {
-            line-height: 30px;
-            padding: 30px 0;
-            font-size: 28px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
-        .header-one button {
-            padding: 15px 30px;
+        .header-one .btn {
+            padding: 12px 25px;
             border: 0;
             border-radius: 5px;
-            margin-right: 15px;
-            background-color: rgb(47, 47, 106);
-            color:white;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        .two {
+        .btn-primary { background-color: rgb(47, 47, 106); color: white; }
+        .btn-secondary { background-color: #ffcc00; color: black; }
+
+        .hero-image-div {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .hero-image-div img {
             width: 100%;
             height: auto;
-            box-sizing: border-box;
-            margin: 20px auto;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        /* --- Section Two (Benefits) --- */
+        .two {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
         }
 
         .two-main {
-            width: 100%;
-            max-width: 1400px;
-            height: auto;
-            gap: 20px;
-            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background-color: rgb(239, 240, 246);
+            padding: 30px;
             border-radius: 12px;
-             background-color: rgb(239, 240, 246);
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
-             display: flex;
-            p {
-                padding: 20px 0;
-            }
+            box-shadow: 0 4px 18px rgba(25, 52, 175, 0.15);
         }
 
-        .two-main-one {
-            width: 100%;
-            max-width: 650px;
-            height: auto;
-            margin: 5px auto;
-            background-color: rgb(239, 240, 246);
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
-            border-radius: 12px;
-    
+        .two-main-one, .two-main-two {
+            flex: 1;
+            min-width: 300px;
         }
 
         .two-main-one img {
             width: 100%;
             height: 100%;
-            height: 650px;
-            padding: 10px;
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
-            border-radius: 30%;  
-        }
-        .two-main-one img:hover{
-            width: 10%;
-            height: 10%;
-            transform: scale(1.1);
             object-fit: cover;
-            transition: 15s;
+            border-radius: 12px;
+            transition: transform 0.5s ease;
         }
 
-        .two-main-two {
-            width: 100%;
-            max-width: 650px;
-            height: auto;
-           padding: 20px ;
+        .two-main-one img:hover {
+            transform: scale(1.03);
         }
-        .t-m-t-o{
-            padding: 0 0 20px 10px;
-            background-color: rgb(239, 240, 246);
-        }
+
         .t-m-t-one {
-            width: 100%;
-            height: 150px;
-            margin-top: 10px;
+            background-color: white;
             padding: 20px;
-            background-color: rgb(239, 240, 246);
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
-            
-            border-radius: 5px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
         }
 
         .t-m-t-one:hover {
-            background-color: green;
+            background-color: #1934af;
+            color: white;
         }
 
+        /* --- Section Three (Counters) --- */
         .three {
             width: 100%;
-            height: auto;
-            margin: 5px auto;
-            background-image: url(images/academy.jpg);
-            background-position: 50%;
+            background-image: linear-gradient(rgba(25, 52, 175, 0.85), rgba(25, 52, 175, 0.85)), url(images/academy.jpg);
             background-attachment: fixed;
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
-            
+            background-size: cover;
+            color: white;
+            padding: 50px 0;
         }
 
         .three-main {
             width: 100%;
             max-width: 1400px;
-            height: 200px;
-            margin: auto;
+            margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
         }
 
         .three-one {
-            width: 100%;
-            max-width: 420px;
-            height: auto;
-            transform: translate(70px, 50px);
             display: flex;
-            color: white;
+            align-items: center;
+            gap: 15px;
+            min-width: 200px;
         }
 
         .three-one-icon {
-            width: 45%;
-            font-size: 70px;
-            text-align: end;
+            font-size: 50px;
+            color: #ffcc00;
         }
 
-        .three-one-hp {
-            width: 30%; 
-            font-size: 20px;
-            line-height: 35px;
-            text-align: center;
-
-        }
-
+        /* --- Section Four (Courses) --- */
         .four {
             width: 100%;
-            height: auto;
-            overflow: hidden;
-            margin: 10px auto;
-            
-        }
-        .four-div{
-            width: 100%;
             max-width: 1400px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 0 20px;
-            border-radius: 8px;
-             background-color: rgb(239, 240, 246);
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
         }
-        .f-one{
-    width: 100%;
-    padding: 40px 0 20px 0;
-    text-align: center;
-}
+
+        .four-div {
+            background-color: rgb(239, 240, 246);
+            padding: 40px 20px;
+            border-radius: 12px;
+        }
+
+        .f-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         .four-main {
-            width: 100%;
-            height: auto; 
             display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
 
         .four-one {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            line-height: 28px;
-            padding: 25px;
-            box-sizing: border-box;
-           box-shadow: 0 4px 8px rgba(236, 147, 147, 0.1);
-            background-color:rgba(236, 147, 147, 0.1);
-            border-radius: 12px;
-          
-            h3{
-                font-size: 20px;
-                padding: 10px 0;
-                margin: 0;
-            }
-            ul{
-                /* list-style-position: inside; */
-                padding: 0;
-                margin: 15px auto;
-            }
-        }
-        .four-button{
-           font-weight: bold;
-            padding: 10px 20px;
-            display: flex;
-            gap: 20px;
-           
-        }
-        .a-button{
-            padding: 10px 20px;
-            border-radius: 8px;
-            background-color: rgb(231, 116, 116);
-           
-        }
-        .ab-button{
-            background-color: wheat;
-            padding: 10px 20px;
-            border-radius: 8px;
-
-           
-        }
-        .four-button a:hover{
-             background-color: tomato;
-            }
-        .four-button a{
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
+            background: white;
             flex: 1;
-            
+            min-width: 300px;
+            max-width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        .five{
+
+        .four-one ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        .four-button {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .four-button a {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .a-button { background-color: rgb(231, 116, 116); color: white; }
+        .ab-button { background-color: wheat; color: #333; }
+
+        /* --- Section Five (Pricing) --- */
+        .five {
             width: 100%;
-            height: auto;
-            margin: 45px auto;
             background-color: rgb(239, 240, 246);
-            box-shadow: 0 4px 18px rgb(25, 52, 175);
+            padding: 50px 20px;
         }
-        .five-main{
+
+        .five-main {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .five-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .five-two {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .five-two-one {
+            background: white;
+            flex: 1;
+            min-width: 280px;
+            max-width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .five-two-one h3 {
+            font-size: 28px;
+            color: #0c14fa;
+            margin: 15px 0;
+        }
+
+        .five-two-one a {
+            display: block;
+            background-color: aqua;
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .five-two-one a:hover { background-color: #00ced1; }
+
+        /* --- Section Six (Teachers) --- */
+        .six {
             width: 100%;
             max-width: 1400px;
-            height: auto;
-            margin: 0 auto;
-            
+            margin: 50px auto;
+            padding: 0 20px;
         }
-        .five-one{
-            width: 100%;
-            height: auto;
-            text-align: center;
-            padding: 40px 0 20px 0;
-               
 
-            p{
-                font-size: 25px;
-                color: #0c14fa;
-                font-family:fantasy;
-                padding-bottom:20px;
-            }
-            h2{
-                font-size: 30px;
-            
-            }
-        }
-        .five-two{
-            width: 100%;
-            height: auto;
+        .six-main {
             display: flex;
-            gap: 20px;
-            padding: 40px 20px;
-        
-            justify-content: center;
             flex-wrap: wrap;
-            
+            gap: 20px;
+            justify-content: center;
         }
-        .five-two-one{
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            gap: 22px;
+
+        .six-one {
+            background-color: white;
+            display: flex;
+            align-items: center;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(236, 147, 147, 0.1);
-           
-            p{
-                margin: 15px auto;
-                line-height: 1.6;
-                color: #222;
-                text-align: justify;
-            }
-            h3{
-                font-size: 28px;
-                margin: 10px 0;
-                color:rgb(85, 226, 226);
-
-            }
-        }
-        .five-two-one a{
-            display: inline-block;
-            background-color: aqua;
-            border-radius: 10px;
-            padding: 10px 20px;
-            text-decoration: none;
-        
-            font-weight: bold;
-            margin-top: 15px;
-            transition: background 0.3s ease;
-            
-        }
-        .five-two-one a:hover {
-    background-color: #00ced1;
-}
-.six{
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-
-}
-.six-main{
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    gap: 20px;
- background-color: rgb(239, 240, 246);
-     box-shadow: 0 0px 15px rgb(25, 52, 175);
-    border-radius: 12px;
-}
-.six-one{
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-    display: flex;
-    gap: 5px;
-    margin: 5px auto;
-    justify-content: space-around;
-    background-color: rgb(239, 240, 246);
-     box-shadow: 0 0px 15px rgb(25, 52, 175);
-    border-radius: 12px;
-
-}
-.six-o-one{
-    width: 270px;
-    height: 330px;
-    padding: 10px;
-    margin: 5px auto;
-    background-color: rgb(239, 240, 246,0.50s);
-     box-shadow: 0 0px 15px rgb(25, 52, 175);
-    border-radius: 12px 0 0 12px;
-    overflow: hidden;
-    
-    img{
-        width: 250px;
-        border-radius: 100%;
-        
-    }
-
-    img:hover{
-    width: 100%;
-    height: 100%;
-    transform: scale(1.7);
-    object-fit: cover;
-    transition: 2s;
-}
-
-}
-
-.six-two{
-    width: 300px;
-    height: auto;
-    padding: 70px 0 10px 80px;
-    margin: 5px auto;
-    line-height: 35px;
-    background-color: rgb(239, 240, 246);
-     box-shadow: 0 0px 15px rgb(25, 52, 175);
-    border-radius: 0 12px 12px 0 ;
-    overflow: hidden;
-
-    h2{
-        width: 150px;
-        margin-bottom: 15px;
-        text-shadow: 0px 0px 12px rgb(113, 68, 249);
-        background: none;
-        
-    }
-    ion-icon{
-        font-size: 35px;
-        transform: translateY(10px);
-
-    }
-}
-
-    .seven{
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        background-color: rgba(153, 113, 246, 0.1);
-    }
-    .seven-main{
-        width: 100%;
-        max-width: 1400px;
-        margin:auto;
-        display: flex;
-        gap: 10px;
-        margin: 10px auto;
-        justify-content: space-around;
-        box-shadow:0 0 12px rgb(58, 58, 247);
-        border-radius: 10px;
-    }
-    .seven-one{
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        padding: 10px;
-        
-    }
-    .seven-one-o{
-        width: 400px;
-        height: auto;
-        
-
-        img{
-            width: 100%;height: auto;
-            
-        }
-    }
-    .seven-two{
-        width: 100%;
-        max-width: 850px;
-        height: auto;
-        padding: 10px;
-        
-        
-    }
-    .seven-two-one{
-        width: 100%;
-        max-width: 850px;
-        height: auto;
-        padding: 20px 10px;
-        line-height: 30px;
-
-
-
-        h2{
-            padding-bottom: 20px;
-                    text-shadow: 0 0 12px rgb(81, 69, 253);
-        }
-        }
-           .seven-two-one:hover h2{
-            transform: scale(1.1);
-        transition: 3s;
-        }
-    
-    .seven-two-two{
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-        padding:20px 10px ;
-        line-height: 50px;
-        font-size: 22px;
-
-        ion-icon{
-            padding: 5px;
-            transform: translate(-10px, 10px);
-            border-radius: 100%;
-            color: white;
-            background-color: rgb(80, 62, 235);
-        }
-    }
-   .eight{
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-   }
-  
-   .eight-main{
-    width: 100%;
-    max-width: 1400px;
-    margin:28px auto;
-    padding: 10px;
-    line-height: 25px;
-    box-shadow: 0 0 15px rgb(82, 54, 245);
-   }
-    .eight-main:hover{
-    transform: scale(1.1);
-    transition: .4s;
-    color: rgb(49, 15, 239);
-    text-shadow: 0 0 12px rgb(32, 22, 128);
-   }
-   .eight-one{
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px;
-
-
-    h2{
-        text-align: center;
-        padding: 20px 0;
-        font-size: 35px;
-    }
-    
-   }
-   .eight-two{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    text-align: justify;
-    line-height: 50px;
-    justify-content: space-around;
-    background-color: rgba(153, 113, 246, 0.1);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 28px;
-    gap: 20px ;
-    
-
-a{
-
-padding: 0 40px;
-text-decoration: none;
-}
-ion-icon{
-    transform: translate(-8px,5px);
-    text-align:center;
-}
-   }
-   .aa{
-    background-color: #09a726;
-    color:white;
-   }
-   .eight-three{
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-   }
-   .eight-three-one{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    line-height: 40px;
-    justify-content: space-around;
-    font-size: 28px;
-    margin: 20px auto;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(18, 10, 236);
-   }
-   .eight-three-two{
-    width: 100%;
-    max-width: 1370px;
-    height: 70px;
-    line-height: 60px;
-    display: flex;
-    margin:10px auto;
-    padding: 0 20px 0 0;
-    justify-content: space-around;
-    background-color: rgba(153, 113, 246, 0.1);
-    
-
-    h3{
-        
-        border-radius: 5px;
-        padding: 0 20px;
-    border: 1px solid teal;
-    text-shadow: 0 0 12px rgb(80, 41, 239);
-    }
-
-   }
-   .nine{
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    margin: 30px auto;
-   }
-   .nine-main{
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    box-shadow: 0 0 15px rgb(31, 12, 241) ;
-   }
-   .nine-one{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    padding: 10px;
-    line-height: 28px;
-    h2{
-        padding: 30px 0;
-        font-size: 35px;
-    }
-    h2:hover{
-        text-shadow: 0 0 12px rgb(41, 77, 237);
-    }
-    p{
-        padding: 15px 0;
-        border-radius: 10px;
-    }
-    p:hover{
-        box-shadow: 0 0 18px rgb(70, 14, 240);
-    }
-   }
-   .nine-one:hover{
-    transform: scale(.9);
-   }
-   .form{
-    width: 100%;
-    height: auto;
-   }
-   .form-main{
-    width: 100%;
-    max-width: 1400px;
-    height: 300px;
-    margin: auto;
-   }
-   .form-div{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: auto;
-    background-color: #09a726;
-    text-align: center;
-    border-radius: 40px;
-    box-shadow: 0 0 15px rgb(18, 10, 236);
-
-    input{
-        display: block;
-        margin: 20px auto;
-        padding: 10px;
-    }
-    button{
-    padding: 10px 61px;
-    border-radius: 20px;
-    border: 3px solid;
-    }
-   }
-   .form-class{
-    border-radius: 100px;
-    background-color: yellowgreen;
-    
-    padding: 20px 0;
-    box-shadow: 0 0 15px rgb(18, 10, 236);
-   }
-   .footer{
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    color: white;
-    background-color: rgb(21, 0, 255);
-    text-align: center;
-    box-shadow: 0 0 15px rgb(40, 8, 244);
-   }
-           @media screen and (max-width: 768px) {
-            .dropdown-content {
-                position: static;
-                /* Ye content ko ek ke niche ek set kar dega */
-                box-shadow: none;
-                width: 100%;
-                display: none;
-                /* Default band rahega */
-            }
-
-            /* Mobile par click hone par dikhane ke liye hum ek class use kar sakte hain */
-            .dropdown.active .dropdown-content {
-                display: block;
-            }
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(25, 52, 175, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            gap: 20px;
         }
 
+        .six-o-one img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .six-two h2 { color: #1934af; }
+
+        /* --- Responsive Media Queries --- */
+        @media screen and (max-width: 992px) {
+            .navbaar-one { justify-content: center; text-align: center; }
+            .navbaar-two-one ul { justify-content: center; }
+            .hero-container { flex-direction: column; text-align: center; }
+            .hero-image-div { max-width: 100%; }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbaar-two { flex-direction: column; }
+            .navbaar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
+            .navbaar-two-one a { width: 100%; padding: 10px; }
+            .navbaar-two-two { width: 100%; text-align: center; }
+            .header-one h1 { font-size: 32px; }
+        }
     </style>
-    <title>Learn French With Rajesh Sir: Online & Offline</title>
 </head>
 
 <body>
 
+    <div class="testing-banner">
+        /: Website on testing. Please contact: +91 7082814430
+    </div>
 
-
-<!-- HTML -->
-<div class="testing-banner">
-    /: website on testing pls contact : +91 7082814430
-</div>
-
-<!-- CSS -->
-<style>
-.testing-banner {
-    background-color: #ffcc00; /* Yellow background */
-    color: #000; /* Black text */
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-</style>
     <div class="navbaar">
         <div class="navbaar-body">
+            
             <div class="navbaar-one">
                 <div class="n-one">
-                    <a href="#">ACADEMY</a>
-                    <P>ONLINE EDUCATION & LEARNIG</P>
+                    <a href="#">WILLKOMMEN ACADEMY</a>
+                    <p>ONLINE EDUCATION & LEARNING</p>
                 </div>
                 <div class="n-two">
                     <div class="n-two-one">
@@ -863,7 +478,7 @@ ion-icon{
                     </div>
                     <div class="n-two-one">
                         <p>Monday - Friday</p>
-                        <p>8:00AM-8:00PM</p>
+                        <p>8:00AM - 8:00PM</p>
                     </div>
                 </div>
                 <div class="n-two">
@@ -882,6 +497,7 @@ ion-icon{
                     <ion-icon name="globe-outline"></ion-icon>
                 </div>
             </div>
+
             <div class="navbaar-two">
                 <div class="navbaar-two-one">
                     <ul>
@@ -895,287 +511,171 @@ ion-icon{
                     </ul>
                 </div>
                 <div class="navbaar-two-two">
-                    <button><a href="#">Get Whatsapp</a></button>
+                    <a href="https://wa.me/917082814430">Get WhatsApp</a>
                 </div>
             </div>
-            <div class="header-one" style="display: inline-block;width: 700px;">
-                <p>WELCOME TO <b>WILLKOMMEN</b></p>
-                <h1>Best Online Edution <br>Expertise</h1>
-                <p>Haryana's Top Rated Academy</p>
-                <a href="https://play.google.com/store/apps/details?id=com.wkdch.germanguru"><button>GET <b>APP</b> NOV ! &#10142</button></a>
-                <button>VIEW COURSE &#10142</button>
+
+            <div class="hero-container">
+                <div class="header-one">
+                    <p>WELCOME TO <b>WILLKOMMEN</b></p>
+                    <h1>Best Online Education Expertise</h1>
+                    <p>Haryana's Top Rated Academy</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.wkdch.germanguru" class="btn btn-secondary">GET APP NOW ! &#10142;</a>
+                    <a href="#" class="btn btn-primary">VIEW COURSE &#10142;</a>
+                </div>
+                <div class="hero-image-div">
+                    <img src="images/Rakesh Sir.jpeg" alt="Rakesh Sir Image">    
+                </div>
             </div>
-            <div style="margin-top: 20px;width: 100%; border-radius: 50px;box-shadow: 0 0 15px yellow; display: inline-block;max-width:500px;height: auto;margin-left: 50px; background-color: yellowgreen;box-sizing: border-box;">
-            <img style="width: 100%;height: 100%;border-radius: 50px;box-shadow: 0 0 15px red;" src="images/Rakesh Sir.jpeg" alt="">    
-            </div>
+
         </div>
     </div>
+
     <div class="two">
         <div class="two-main">
             <div class="two-main-one">
-                <img src="images/academy.jpg" alt="">
+                <img src="images/academy.jpg" alt="Academy">
             </div>
-            <!-- icon lgana h -->
             <div class="two-main-two">
                 <div class="t-m-t-o">
-                <p>LEARN ANYTHING</p>
-                <h1>Benefits About Online <br> Learning Expertise</h1>
+                    <p style="color: #1934af; font-weight: bold; margin-bottom: 5px;">LEARN ANYTHING</p>
+                    <h1 style="margin-bottom: 20px;">Benefits About Online Learning Expertise</h1>
                 </div> 
                 <div class="t-m-t-one">
                     <h2>Live Interactive Classes:</h2>
-                    <p> No boring pre-recorded videos. Learn live, ask questions instantly, and practice speaking with your trainer.</p>
+                    <p>No boring pre-recorded videos. Learn live, ask questions instantly, and practice speaking with your trainer.</p>
                 </div>
                 <div class="t-m-t-one">
                     <h2>Flexible Batches:</h2>
-                    <p> Weekend and weekday options available so your job or college routine doesn't get disturbed.</p>
+                    <p>Weekend and weekday options available so your job or college routine doesn't get disturbed.</p>
                 </div>
                 <div class="t-m-t-one">
                     <h2>Study Material Included:</h2>
-                    <p> Get free access to digital PDFs, grammar worksheets, vocabulary flashcards, and practice tests.</p>
+                    <p>Get free access to digital PDFs, grammar worksheets, vocabulary flashcards, and practice tests.</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="three">
         <div class="three-main">
             <div class="three-one">
-                <div class="three-one-icon">
-                    <ion-icon name="book-outline"></ion-icon>
-                </div>
-                <div class="three-one-hp">
-                    <h2>1587</h2>
+                <div class="three-one-icon"><ion-icon name="book-outline"></ion-icon></div>
+                <div>
+                    <h2>1587+</h2>
                     <p>Happy Students</p>
                 </div>
             </div>
             <div class="three-one">
-                <div class="three-one-icon">
-                    <ion-icon name="laptop-outline"></ion-icon>
-                </div>
-                <div class="three-one-hp">
-                    <h2>30</h2>
+                <div class="three-one-icon"><ion-icon name="laptop-outline"></ion-icon></div>
+                <div>
+                    <h2>30+</h2>
                     <p>COURSES</p>
                 </div>
             </div>
             <div class="three-one">
-                <div class="three-one-icon">
-                    <ion-icon name="book-outline"></ion-icon>
-                </div>
-                <div class="three-one-hp">
-                    <h2>17</h2>
+                <div class="three-one-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+                <div>
+                    <h2>17+</h2>
                     <p>Years Experience</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="four">
         <div class="four-div">
             <div class="f-one">
-            <p>OUR COURSES</p>
-            <h2>Explore Our Popular Online Courses</h2>
+                <p style="color: #1934af; font-weight: bold;">OUR COURSES</p>
+                <h2>Explore Our Popular Online Courses</h2>
             </div> 
             <div class="four-main">
-            <div class="four-one">
-                <h3>A1 Beginer</h3>
-                <p>Start from zero. Build core vocabulary and survival phrases.</p>
-                <ul>
-                <li>Introduce yourself, family, work (je m’appelle...)</li>
-                <li>Order food, ask for prices & directions</li>
-                <li>Grammar: articles, present tense, basic word order</li>
-                </ul>
-                <div class="four-button">
-                <a class="a-button" href="#">Join A1</a>
-                <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                <div class="four-one">
+                    <h3>A1 Beginner</h3>
+                    <p>Start from zero. Build core vocabulary and survival phrases.</p>
+                    <ul>
+                        <li>Introduce yourself, family, work</li>
+                        <li>Order food, ask for prices & directions</li>
+                        <li>Grammar: articles, present tense</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join A1</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
                 </div>
-            </div>
-            <div class="four-one">
-                <h3>A2 Elementary</h3>
-                <p>Daily-life conversations with more <br> confidence.</p>
-                <ul>
-                <li>Talk about routine & past experiences</li>
-                <li>Read short texts & emails</li>
-                <li>Grammar: passé composé, reflexive verbs</li>
-                </ul>
-                <div class="four-button">
-            <a class="a-button" href="#">Join A2</a>
-                <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                <div class="four-one">
+                    <h3>A2 Elementary</h3>
+                    <p>Daily-life conversations with more confidence.</p>
+                    <ul>
+                        <li>Talk about routine & experiences</li>
+                        <li>Read short texts & emails</li>
+                        <li>Grammar: past tense & verbs</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join A2</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
                 </div>
-            </div>
-            <div class="four-one">
-                <h3>B1 Intermediate</h3>
-                <p>Discuss opinions, handle travel & work <br> situations.</p>
-                <ul>
-                    <li>Narrate events, express viewpoints</li>
-                    <li>Write formal emails & summaries</li>
-                    <li>Grammar: imparfait vs passé composé, pronouns</li>
-                </ul>
-                <div class="four-button">
-                <a class="a-button" href="#five-main">Join B1</a>
-                <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                <div class="four-one">
+                    <h3>B1 Intermediate</h3>
+                    <p>Discuss opinions, handle travel & work situations.</p>
+                    <ul>
+                        <li>Narrate events & viewpoints</li>
+                        <li>Write formal emails & summaries</li>
+                        <li>Grammar: complex structures</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join B1</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="five">
         <div class="five-main">
             <div class="five-one">
-                <p>OUR PRICING</p>
+                <p style="color: #0c14fa; font-weight: bold;">OUR PRICING</p>
                 <h2>Pricing & Packages</h2>
-         </div>
- <div class="five-two">
-    <div class="five-two-one">
-        <h4>A1 French Course</h4>
-        <h3>&#8377 20000</h3>
-        <p>At the A1 level, the focus of French language learning is on building a solid foundation in the basics. You will learn essential vocabulary, common phrases, and the fundamentals of Italian grammar. This includes understanding and using simple sentence structures, basic verb conjugation, and noun and adjective agreement. Pronunciation and listening skills will also be developed to help you understand and communicate in French.</p>
-        <a href="https://wa.me/+917082814430">GET STARTED</a>
-    </div>
-    <div class="five-two-one">
-        <h4>A2 French Course</h4>
-        <h3>₹ 25000</h3>
-        <p><b> CEFR Level: A2 (Elementary)</b>
-Goal: The aim of this course is to teach you how to understand and use basic French sentences and expressions related to daily life (such as family information, shopping, local geography, and employment). You will learn to communicate during simple, routine tasks that require a direct exchange of information.</p>
-
-        <a href="https://wa.me/917082814430">GET STARTED</a>
-    </div>
-    <div class="five-two-one">
-        <h4>B1 French Course</h4>
-        <h3>₹ 30000</h3>
-        <p><b> CEFR Level: B1 (Intermediate)</b>
-Goal: The main objective of this course is to enable you to understand standard conversations encountered in office, school, or travel settings. You will be able to handle situations that arise while traveling. Additionally, you will be able to speak and write by connecting your interests, plans, experiences, and opinions.</p>
-        <a href="https://wa.me/917082814430">GET STARTED</a>
-    </div>
-    <div class="five-two-one">
-        <h4>B2 French Course</h4>
-        <h3>₹ 40000</h3>
-        <p> <b>CEFR Level: B2 (Upper-Intermediate)</b>
-Goal: The main objective of this course is to teach you how to communicate naturally and spontaneously with native speakers (from France or Canada) without any pressure. You will be able to grasp the main ideas of complex texts, even those involving technical discussions within your field of specialization. You will also be able to articulate your views on a given issue clearly and in detail.</p>
-        <a href="https://wa.me/917082814430">GET STARTED</a>
-    </div>
- </div>
+            </div>
+            <div class="five-two">
+                <div class="five-two-one">
+                    <h4>A1 French Course</h4>
+                    <h3>&#8377; 20,000</h3>
+                    <p>Focus on building a solid foundation in the basics. You will learn essential vocabulary, common phrases, and fundamentals of grammar.</p>
+                    <a href="https://wa.me/917082814430">GET STARTED</a>
+                </div>
+                <div class="five-two-one">
+                    <h4>A2 French Course</h4>
+                    <h3>&#8377; 25,000</h3>
+                    <p>Learn how to understand and use basic French sentences and expressions related to daily life like shopping and employment.</p>
+                    <a href="https://wa.me/917082814430">GET STARTED</a>
+                </div>
+                <div class="five-two-one">
+                    <h4>B1 French Course</h4>
+                    <h3>&#8377; 30,000</h3>
+                    <p>Understand standard conversations encountered in office, school, or travel settings. Easily handle situations while traveling.</p>
+                    <a href="https://wa.me/917082814430">GET STARTED</a>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="six">
-    <div class="six-main">
-    <div class="six-one">
-     <div class="six-o-one">
-        <img src="academy-2.jpg" alt="">
-     </div>
-        <div class="six-two">
-            <h2>Rajesh Sir</h2>
-            <h3>10 years of experience teaching(French)</h3>
-            
-            <h4> <ion-icon name="logo-whatsapp"></ion-icon>: +91 7082814430</h4>
-        </div>
-        </div>
-        <div class="six-one">
-     <div class="six-o-one">
-        <img src="academy-2.jpg" alt="">
-     </div>
-        <div class="six-two">
-            <h2>Rajesh Sir</h2>
-            <h3>10 years of experience teaching(French)</h3>
-            
-            <h4> <ion-icon name="logo-whatsapp"></ion-icon>: +91 7082814430</h4>
-        </div>
-     </div>
-    </div>
-    </div>
-<div class="seven">
-<div class="seven-main">
-<div class="seven-one">
-<div class="seven-one-o">
-    <img src="https://elanguagestudio.com/theme/images/welcome-students.webp" alt="">
-</div>
-</div>
-<div class="seven-two">
-<div class="seven-two-one">
-    <h2>Why Willkommen Deutsch Academy is the best foreign language institute in Haryana ?</h2> 
-    <p>Willkommen Deutsch Academy  is the premier foreign language institute in Haryana. With its highly qualified and experienced faculty, innovative teaching methods for French, learning, and commitment to student success, it has become the go-to destination for anyone seeking to learn Foreign Language in the city.One of the key reasons why Willkommen Deutsch Academy is considered the top and best foreign language institute in Haryana is its faculty. The institute has a team of highly qualified and experienced instructors, many of whom are native French speakers. These instructors have a deep understanding of the language and culture of foreign countries , and are passionate about sharing their knowledge with students. They are skilled at creating a supportive and engaging learning environment that fosters student success.</p>
-</div>
-<div class="seven-two-two">
-    <h3> <ion-icon name="accessibility-outline"></ion-icon> Well qualified & experienced language faculty in Haryana</h3>
-    <h3> <ion-icon name="language-outline"></ion-icon> Innovative foreign language teaching methods</h3>
-    <h3> <ion-icon name="book-outline"></ion-icon> Individual attention, support and offline classes</h3>
-    <h3> <ion-icon name="laptop-outline"></ion-icon> Flexible course options & scheduling</h3>
-    <h3> <ion-icon name="planet-outline"></ion-icon> Well-rounded language courses</h3>
-    <h3> <ion-icon name="call-outline"></ion-icon> Consistent positive feedbacks like best Academy in Haryana</h3>
-</div>
-</div>
-</div>
-</div>
-<div class="eight">
-    <div class="eight-main">
-       <div class="eight-one">
-         <h2>Upcoming - Language Batches, Exams & Webinars</h2>
-         <p>Details of Upcoming - Foreign Language Learning Batches & Exams. Explore a world of possibilities with our upcoming online & offline French language course in Haryana , French classes in Haryana Additionally, prepare for upcoming language exams with our comprehensive offline test preparation course including French classes in Haryana, equipping you with the necessary tools to excel and achieve your desired proficiency foreign language levels .</p>
-       </div>
-       <div class="eight-two">
-        <a class="aa" href="#"> <ion-icon name="alarm-outline"> </ion-icon>Upcoming Baches</a>
-        <a href="#"> <ion-icon name="book-outline"></ion-icon> Upcoming Exams</a>
-        <a href="#"> <ion-icon name="videocam-outline"></ion-icon> Upcoming Webinars</a>
-       </div>
-<div class="eight-three">
-    <div class="eight-three-one">
-        <p>Date</p>
-        <p>Details</p>
-        <p>type</p>
-    </div>
-    <div class="eight-three-two">
-        <h3> 11 July</h3>
-        <h4>A1 French Course</h4>
-        <p>Online</p>
-    </div>
-</div>
-    </div>
-</div>
-<div class="nine">
-    <div class="nine-main">
-        <div class="nine-one">
-            <h2>Head Offce/Branch</h2>
-          <p>  &#128204 SCO 73 - 74, Red Squre Market, Hisar, <br>Haryana.</p>
-       <p>Course Deitels: +91 7082814430 </p>
-       <p>Payments Deitels: +91 9350793407</p>
-        </div>
-
-        <div class="nine-one">
-            <h2>Our Branchs</h2>
-          <p> &#128204 Maharaja Agarsen Chowk, Rohtak Road, Bhiwani, Haryana.</p>
-       <p>Course Deitels: +91 8073025732 </p>
-       <p>Payments Deitels: +91 9350793407</p>
-        </div>
-        
-        <div class="nine-one">
-            <h2>Opening Timeing</h2>
-            <p>Mon-Sat: 08:00 - 18:00</p>
+        <div class="six-main">
+            <div class="six-one">
+                <div class="six-o-one">
+                    <img src="images/Rakesh Sir.jpeg" alt="Rajesh Sir">
+                </div>
+                <div class="six-two">
+                    <h2>Rajesh Sir</h2>
+                    <h3>10+ Years Profile (French)</h3>
+                    <p><ion-icon name="logo-whatsapp" style="color: green; vertical-align: middle;"></ion-icon> +91 7082814430</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="form">
-    <div class="form-main">
-        <div class="form-div">
-        <form class="form-class">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Mobile No.">
-            <select style="padding: 10px 40px; margin-bottom :10px; ;" name="value" id="">
-                <p >
-            <option value="">Select</option>
-            <option value="">A1 Course</option>
-            <option value="">A2 Course</option>
-            <option value="">B1 Course</option>
-            <option value="">B2 Course</option>
-            </select></p>
-            <a href="https://wa.me/+917082814430"><button>submit</button></a>
-        </form>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    droit d'auteur @ 2026 Willkommen Deutsch Academy
-</div>
 
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </html>
