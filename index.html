@@ -18,6 +18,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
+            color: #333;
         }
 
         /* --- Testing Banner --- */
@@ -43,7 +44,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
+            background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
         }
 
         .navbaar-body {
@@ -61,10 +62,6 @@
             justify-content: space-between;
             padding: 20px 0;
             gap: 20px;
-        }
-
-        .n-one {
-            max-width: 400px;
         }
 
         .n-one a {
@@ -143,7 +140,6 @@
 
         .navbaar-two-two {
             background-color: rgb(21, 135, 84);
-            height: 100%;
         }
 
         .navbaar-two-two a {
@@ -205,7 +201,7 @@
             width: 100%;
             height: auto;
             border-radius: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.4);
         }
 
         /* --- Section Two (Benefits) --- */
@@ -233,10 +229,9 @@
 
         .two-main-one img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             border-radius: 12px;
-            transition: transform 0.5s ease;
+            transition: transform 0.4s ease;
         }
 
         .two-main-one img:hover {
@@ -253,7 +248,7 @@
         }
 
         .t-m-t-one:hover {
-            background-color: #1934af;
+            background-color: green;
             color: white;
         }
 
@@ -263,6 +258,7 @@
             background-image: linear-gradient(rgba(25, 52, 175, 0.85), rgba(25, 52, 175, 0.85)), url(images/academy.jpg);
             background-attachment: fixed;
             background-size: cover;
+            background-position: center;
             color: white;
             padding: 50px 0;
         }
@@ -440,20 +436,229 @@
 
         .six-two h2 { color: #1934af; }
 
+        /* --- Section Seven (Why Choose Us) --- */
+        .seven {
+            width: 100%;
+            padding: 60px 20px;
+            background-color: rgba(153, 113, 246, 0.05);
+        }
+
+        .seven-main {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(58, 58, 247, 0.1);
+        }
+
+        .seven-one, .seven-two {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .seven-one-o img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .seven-two-one h2 {
+            margin-bottom: 15px;
+            color: rgb(81, 69, 253);
+        }
+
+        .seven-two-one p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .seven-two-two h3 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .seven-two-two ion-icon {
+            padding: 8px;
+            border-radius: 50%;
+            color: white;
+            background-color: rgb(80, 62, 235);
+            font-size: 18px;
+        }
+
+        /* --- Section Eight (Upcoming Batches) --- */
+        .eight {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .eight-main {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(82, 54, 245, 0.15);
+        }
+
+        .eight-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .eight-one h2 { font-size: 30px; margin-bottom: 15px; }
+
+        .eight-two {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .eight-two a {
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #333;
+            background-color: rgba(153, 113, 246, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .eight-two a.aa { background-color: #09a726; color: white; }
+
+        .eight-three-two {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            background-color: rgba(153, 113, 246, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .eight-three-two h3 {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid teal;
+            background: white;
+            font-size: 16px;
+        }
+
+        /* --- Section Nine (Address / Contact details) --- */
+        .nine {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .nine-main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(31, 12, 241, 0.1);
+        }
+
+        .nine-one {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nine-one:hover { transform: translateY(-5px); }
+        .nine-one h2 { font-size: 24px; margin-bottom: 15px; color: rgb(31, 12, 241); }
+        .nine-one p { padding: 12px; background: #f8f9fa; border-radius: 8px; }
+
+        /* --- Form Section --- */
+        .form {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .form-div {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #09a726;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(18, 10, 236, 0.2);
+            text-align: center;
+        }
+
+        .form-div input {
+            width: 100%;
+            display: block;
+            margin: 15px 0;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .form-div button {
+            padding: 12px 40px;
+            border-radius: 20px;
+            border: 2px solid white;
+            background-color: yellowgreen;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-div button:hover { background-color: white; color: #09a726; }
+
+        /* --- Footer --- */
+        .footer {
+            width: 100%;
+            padding: 15px 0;
+            color: white;
+            background-color: rgb(21, 0, 255);
+            text-align: center;
+            font-size: 14px;
+        }
+
         /* --- Responsive Media Queries --- */
         @media screen and (max-width: 992px) {
             .navbaar-one { justify-content: center; text-align: center; }
             .navbaar-two-one ul { justify-content: center; }
             .hero-container { flex-direction: column; text-align: center; }
             .hero-image-div { max-width: 100%; }
+            .seven-main { flex-direction: column; }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             .navbaar-two { flex-direction: column; }
             .navbaar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
-            .navbaar-two-one a { width: 100%; padding: 10px; }
+            .navbaar-two-one a { width: 100%; padding: 12px; }
             .navbaar-two-two { width: 100%; text-align: center; }
             .header-one h1 { font-size: 32px; }
+            .eight-three-two { flex-direction: column; }
         }
     </style>
 </head>
@@ -473,18 +678,14 @@
                     <p>ONLINE EDUCATION & LEARNING</p>
                 </div>
                 <div class="n-two">
-                    <div class="n-two-one">
-                        <ion-icon name="time-outline"></ion-icon>
-                    </div>
+                    <div class="n-two-one"><ion-icon name="time-outline"></ion-icon></div>
                     <div class="n-two-one">
                         <p>Monday - Friday</p>
                         <p>8:00AM - 8:00PM</p>
                     </div>
                 </div>
                 <div class="n-two">
-                    <div class="n-two-one">
-                        <ion-icon name="call-outline"></ion-icon>
-                    </div>
+                    <div class="n-two-one"><ion-icon name="call-outline"></ion-icon></div>
                     <div class="n-two-one">
                         <p>Call Us</p>
                         <p>+91 7082814430</p>
@@ -524,7 +725,7 @@
                     <a href="#" class="btn btn-primary">VIEW COURSE &#10142;</a>
                 </div>
                 <div class="hero-image-div">
-                    <img src="images/Rakesh Sir.jpeg" alt="Rakesh Sir Image">    
+                    <img src="images/Rakesh Sir.jpeg" alt="Rakesh Sir">    
                 </div>
             </div>
 
@@ -534,7 +735,7 @@
     <div class="two">
         <div class="two-main">
             <div class="two-main-one">
-                <img src="images/academy.jpg" alt="Academy">
+                <img src="images/academy.jpg" alt="Academy Layout">
             </div>
             <div class="two-main-two">
                 <div class="t-m-t-o">
@@ -675,6 +876,80 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="seven">
+        <div class="seven-main">
+            <div class="seven-one">
+                <div class="seven-one-o">
+                    <img src="https://elanguagestudio.com/theme/images/welcome-students.webp" alt="Welcome Students">
+                </div>
+            </div>
+            <div class="seven-two">
+                <div class="seven-two-one">
+                    <h2>Why Willkommen Deutsch Academy is the best foreign language institute in Haryana?</h2> 
+                    <p>Willkommen Deutsch Academy is the premier foreign language institute in Haryana. With its highly qualified and experienced faculty, innovative teaching methods for French learning, and commitment to student success, it has become the go-to destination for anyone seeking to learn Foreign Languages. The institute has a team of highly qualified instructors who create a supportive and engaging learning environment.</p>
+                </div>
+                <div class="seven-two-two">
+                    <h3><ion-icon name="accessibility-outline"></ion-icon> Well qualified & experienced language faculty in Haryana</h3>
+                    <h3><ion-icon name="language-outline"></ion-icon> Innovative foreign language teaching methods</h3>
+                    <h3><ion-icon name="book-outline"></ion-icon> Individual attention, support and offline classes</h3>
+                    <h3><ion-icon name="laptop-outline"></ion-icon> Flexible course options & scheduling</h3>
+                    <h3><ion-icon name="planet-outline"></ion-icon> Well-rounded language courses</h3>
+                    <h3><ion-icon name="call-outline"></ion-icon> Consistent positive feedback as the best Academy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eight">
+        <div class="eight-main">
+            <div class="eight-one">
+                <h2>Upcoming - Language Batches, Exams & Webinars</h2>
+                <p>Details of Upcoming Foreign Language Learning Batches & Exams. Explore a world of possibilities with our upcoming online & offline French language courses and test preparation settings in Haryana.</p>
+            </div>
+            <div class="eight-two">
+                <a class="aa" href="#"><ion-icon name="alarm-outline"></ion-icon> Upcoming Batches</a>
+                <a href="#"><ion-icon name="book-outline"></ion-icon> Upcoming Exams</a>
+                <a href="#"><ion-icon name="videocam-outline"></ion-icon> Upcoming Webinars</a>
+            </div>
+            <div class="eight-three-two">
+                <h3>Batch A1: Starts Next Monday</h3>
+                <h3>Exam Prep: DELF/TEF Batches</h3>
+                <h3>Free Webinar: Study in France/Canada</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="nine">
+        <div class="nine-main">
+            <div class="nine-one">
+                <h2>Our Location</h2>
+                <p>Willkommen Academy, Tosham, Haryana, India</p>
+            </div>
+            <div class="nine-one">
+                <h2>Call Us</h2>
+                <p>+91 7082814430</p>
+            </div>
+            <div class="nine-one">
+                <h2>Email Us</h2>
+                <p>info@willkommenacademy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-div">
+            <h2>Quick Inquiry Form</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <button type="submit">Submit Now</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Willkommen Academy. All Rights Reserved.
     </div>
 
 </body>
