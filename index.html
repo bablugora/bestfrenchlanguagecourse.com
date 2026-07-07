@@ -2,459 +2,955 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Willkommen Academy</title>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn French With Rajesh Sir: Online & Offline</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-        /* --- Testing Banner --- */
-        .testing-banner {
-            background-color: #ffcc00;
-            color: #000;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 9999;
-        }
+        /* --- Testing Banner --- */
+        .testing-banner {
+            background-color: #ffcc00;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
 
-        /* --- Navbar Area --- */
-        .navbaar {
-            width: 100%;
-            height: auto;
-            padding-top: 50px; 
-            padding-bottom: 50px;
-            color: white;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
-        }
+        
+        .navbaar {
+            width: 100%;
+            height: auto;
+            padding-top: 50px; 
+            padding-bottom: 50px;
+            color: white;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
+        }
 
-        .navbaar-body {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .navbaar-body {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-        .navbaar-one {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 0;
-            gap: 20px;
-        }
+        .navbaar-one {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            gap: 20px;
+        }
 
-        .n-one a {
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
+        .n-one a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-        .n-one p {
-            font-size: 12px;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }
+        .n-one p {
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
 
-        .n-two {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .n-two {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-        .n-two-one ion-icon {
-            font-size: 35px;
-            color: #ffcc00;
-        }
+        .n-two-one ion-icon {
+            font-size: 35px;
+            color: #ffcc00;
+        }
 
-        .n-two-one p {
-            font-size: 14px;
-            margin: 0;
-        }
+        .n-two-one p {
+            font-size: 14px;
+            margin: 0;
+        }
 
-        .n-three ion-icon {
-            padding: 10px;
-            margin-left: 10px;
-            border-radius: 50%;
-            color: rgb(58, 76, 124);
-            font-size: 20px;
-            background-color: aliceblue;
-            transition: 0.3s;
-        }
+        .n-three ion-icon {
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+            color: rgb(58, 76, 124);
+            font-size: 20px;
+            background-color: aliceblue;
+            transition: 0.3s;
+        }
 
-        .n-three ion-icon:hover {
-            color: white;
-            background-color: rgb(63, 128, 207);
-        }
+        .n-three ion-icon:hover {
+            color: white;
+            background-color: rgb(63, 128, 207);
+        }
 
-        .navbaar-two {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            margin-top: 10px;
-            overflow: hidden;
-        }
+        .navbaar-two {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
 
-        .navbaar-two-one ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-        }
+        .navbaar-two-one ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-        .navbaar-two-one a {
-            text-decoration: none;
-            padding: 15px 20px;
-            color: white;
-            display: inline-block;
-            transition: 0.3s;
-        }
+        .navbaar-two-one a {
+            text-decoration: none;
+            padding: 15px 20px;
+            color: white;
+            display: inline-block;
+            transition: 0.3s;
+        }
 
-        .navbaar-two-one a:hover {
-            background-color: rgba(255,255,255,0.2);
-        }
+        .navbaar-two-one a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
 
-        .navbaar-two-two {
-            background-color: rgb(21, 135, 84);
-        }
+        .navbaar-two-two {
+            background-color: rgb(21, 135, 84);
+        }
 
-        .navbaar-two-two a {
-            display: inline-block;
-            padding: 15px 25px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
+        .navbaar-two-two a {
+            display: inline-block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
 
-        /* --- About Inner Header Title --- */
-        .about-title-section {
-            text-align: center;
-            margin-top: 40px;
-        }
+        /* --- Hero Content Area --- */
+        .hero-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 30px;
+        }
 
-        .about-title-section h1 {
-            font-size: 45px;
-            color: white;
-            margin-bottom: 10px;
-        }
+        .header-one {
+            flex: 1;
+            min-width: 250px;
+        }
 
-        .about-title-section p {
-            font-size: 18px;
-            color: #ffcc00;
-        }
+        .header-one h1 {
+            font-size: 45px;
+            margin: 15px 0;
+            line-height: 1.7;
+        }
 
-        /* --- Our Story Section (Matching Main Section Grid) --- */
-        .story-section {
-            width: 100%;
-            max-width: 1400px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+        .header-one p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-        .story-main {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            align-items: center;
-        }
+        .header-one .btn {
+            padding: 12px 25px;
+            border: 0;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-        .story-text, .story-image {
-            flex: 1;
-            min-width: 300px;
-        }
+        .btn-primary { background-color: rgb(47, 47, 106); color: white; }
+        .btn-secondary { background-color: #ffcc00; color: black; }
 
-        .story-text h2 {
-            font-size: 32px;
-            color: #1934af;
-            margin-bottom: 20px;
-        }
+        .hero-image-div {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            text-align: center;
+        }
 
-        .story-text p {
-            font-size: 16px;
-            line-height: 1.7;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
+        .hero-image-div img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.4);
+        }
 
-        .story-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(25, 52, 175, 0.15);
-        }
+        /* --- Section Two (Benefits) --- */
+        .two {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
 
-        /* --- Vision & Mission Cards (Using Course Section Theme) --- */
-        .vision-section {
-            width: 100%;
-            max-width: 1400px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+        .two-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background-color: rgb(239, 240, 246);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(25, 52, 175, 0.15);
+        }
 
-        .vision-div {
-            background-color: rgb(239, 240, 246);
-            padding: 40px 20px;
-            border-radius: 12px;
-        }
+        .two-main-one, .two-main-two {
+            flex: 1;
+            min-width: 300px;
+        }
 
-        .vision-main {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: center;
-        }
+        .two-main-one img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.4s ease;
+        }
 
-        .vision-box {
-            background: white;
-            flex: 1;
-            min-width: 300px;
-            max-width: 420px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            text-align: center;
-        }
+        .two-main-one img:hover {
+            transform: scale(1.03);
+        }
 
-        .vision-box ion-icon {
-            font-size: 45px;
-            color: #1934af;
-            margin-bottom: 15px;
-        }
+        .t-m-t-one {
+            background-color: white;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
 
-        .vision-box h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-            color: #1934af;
-        }
+        .t-m-t-one:hover {
+            background-color: green;
+            color: white;
+        }
 
-        .vision-box p {
-            font-size: 15px;
-            line-height: 1.6;
-            color: #555;
-        }
+        /* --- Section Three (Counters) --- */
+        .three {
+            width: 100%;
+            background-image: linear-gradient(rgba(25, 52, 175, 0.85), rgba(25, 52, 175, 0.85)), url(images/academy.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 0;
+        }
 
-        /* --- Stats Counter Section (Same as Main) --- */
-        .three {
-            width: 100%;
-            background-image: linear-gradient(rgba(25, 52, 175, 0.85), rgba(25, 52, 175, 0.85)), url(images/academy.jpg);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 50px 0;
-        }
+        .three-main {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
 
-        .three-main {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
+        .three-one {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-width: 200px;
+        }
 
-        .three-one {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            min-width: 200px;
-        }
+        .three-one-icon {
+            font-size: 50px;
+            color: #ffcc00;
+        }
 
-        .three-one-icon {
-            font-size: 50px;
-            color: #ffcc00;
-        }
+        /* --- Section Four (Courses) --- */
+        .four {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
 
-        /* --- Footer --- */
-        .footer {
-            width: 100%;
-            padding: 15px 0;
-            color: white;
-            background-color: rgb(21, 0, 255);
-            text-align: center;
-            font-size: 14px;
-        }
+        .four-div {
+            background-color: rgb(239, 240, 246);
+            padding: 40px 20px;
+            border-radius: 12px;
+        }
 
-        /* --- Responsive Queries --- */
-        @media screen and (max-width: 992px) {
-            .navbaar-one { justify-content: center; text-align: center; }
-            .navbaar-two-one ul { justify-content: center; }
-            .story-main { flex-direction: column; }
-        }
+        .f-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-        @media screen and (max-width: 768px) {
-            .navbaar-two { flex-direction: column; }
-            .navbaar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
-            .navbaar-two-one a { width: 100%; padding: 12px; }
-            .navbaar-two-two { width: 100%; text-align: center; }
-        }
-    </style>
+        .four-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .four-one {
+            background: white;
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .four-one ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        .four-button {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .four-button a {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .a-button { background-color: rgb(231, 116, 116); color: white; }
+        .ab-button { background-color: wheat; color: #333; }
+
+        /* --- Section Five (Pricing) --- */
+        .five {
+            width: 100%;
+            background-color: rgb(239, 240, 246);
+            padding: 50px 20px;
+        }
+
+        .five-main {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .five-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .five-two {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .five-two-one {
+            background: white;
+            flex: 1;
+            min-width: 280px;
+            max-width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .five-two-one h3 {
+            font-size: 28px;
+            color: #0c14fa;
+            margin: 15px 0;
+        }
+
+        .five-two-one a {
+            display: block;
+            background-color: aqua;
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .five-two-one a:hover { background-color: #00ced1; }
+
+        /* --- Section Six (Teachers) --- */
+        .six {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .six-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .six-one {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(25, 52, 175, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            gap: 20px;
+        }
+
+        .six-o-one img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .six-two h2 { color: #1934af; }
+
+        /* --- Section Seven (Why Choose Us) --- */
+        .seven {
+            width: 100%;
+            padding: 60px 20px;
+            background-color: rgba(153, 113, 246, 0.05);
+        }
+
+        .seven-main {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(58, 58, 247, 0.1);
+        }
+
+        .seven-one, .seven-two {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .seven-one-o img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .seven-two-one h2 {
+            margin-bottom: 15px;
+            color: rgb(81, 69, 253);
+        }
+
+        .seven-two-one p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .seven-two-two h3 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .seven-two-two ion-icon {
+            padding: 8px;
+            border-radius: 50%;
+            color: white;
+            background-color: rgb(80, 62, 235);
+            font-size: 18px;
+        }
+
+        /* --- Section Eight (Upcoming Batches) --- */
+        .eight {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .eight-main {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(82, 54, 245, 0.15);
+        }
+
+        .eight-one {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .eight-one h2 { font-size: 30px; margin-bottom: 15px; }
+
+        .eight-two {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .eight-two a {
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #333;
+            background-color: rgba(153, 113, 246, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .eight-two a.aa { background-color: #09a726; color: white; }
+
+        .eight-three-two {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            background-color: rgba(153, 113, 246, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .eight-three-two h3 {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid teal;
+            background: white;
+            font-size: 16px;
+        }
+
+        /* --- Section Nine (Address / Contact details) --- */
+        .nine {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .nine-main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(31, 12, 241, 0.1);
+        }
+
+        .nine-one {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nine-one:hover { transform: translateY(-5px); }
+        .nine-one h2 { font-size: 24px; margin-bottom: 15px; color: rgb(31, 12, 241); }
+        .nine-one p { padding: 12px; background: #f8f9fa; border-radius: 8px; }
+
+        /* --- Form Section --- */
+        .form {
+            width: 100%;
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .form-div {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #09a726;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(18, 10, 236, 0.2);
+            text-align: center;
+        }
+
+        .form-div input {
+            width: 100%;
+            display: block;
+            margin: 15px 0;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .form-div button {
+            padding: 12px 40px;
+            border-radius: 20px;
+            border: 2px solid white;
+            background-color: yellowgreen;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-div button:hover { background-color: white; color: #09a726; }
+
+        /* --- Footer --- */
+        .footer {
+            width: 100%;
+            padding: 15px 0;
+            color: white;
+            background-color: rgb(21, 0, 255);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* --- Responsive Media Queries --- */
+        @media screen and (max-width: 992px) {
+            .navbaar-one { justify-content: center; text-align: center; }
+            .navbaar-two-one ul { justify-content: center; }
+            .hero-container { flex-direction: column; text-align: center; }
+            .hero-image-div { max-width: 100%; }
+            .seven-main { flex-direction: column; }
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbaar-two { flex-direction: column; }
+            .navbaar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
+            .navbaar-two-one a { width: 100%; padding: 12px; }
+            .navbaar-two-two { width: 100%; text-align: center; }
+            .header-one h1 { font-size: 32px; }
+            .eight-three-two { flex-direction: column; }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="testing-banner">
-        /: Website on testing. Please contact: +91 7082814430
-    </div>
+    <div class="testing-banner">
+        /: Website on testing. Please contact: +91 7082814430
+    </div>
 
-    <div class="navbaar">
-        <div class="navbaar-body">
-            
-            <!-- Navbar Header Area -->
-            <div class="navbaar-one">
-                <div class="n-one">
-                    <a href="index.html">WILLKOMMEN ACADEMY</a>
-                    <p>ONLINE EDUCATION & LEARNING</p>
-                </div>
-                <div class="n-two">
-                    <div class="n-two-one"><ion-icon name="time-outline"></ion-icon></div>
-                    <div class="n-two-one">
-                        <p>Monday - Friday</p>
-                        <p>8:00AM - 8:00PM</p>
-                    </div>
-                </div>
-                <div class="n-two">
-                    <div class="n-two-one"><ion-icon name="call-outline"></ion-icon></div>
-                    <div class="n-two-one">
-                        <p>Call Us</p>
-                        <p>+91 7082814430</p>
-                    </div>
-                </div>
-                <div class="n-three">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="globe-outline"></ion-icon>
-                </div>
-            </div>
+    <div class="navbaar">
+        <div class="navbaar-body">
+            
+            <div class="navbaar-one">
+                <div class="n-one">
+                    <a href="#">WILLKOMMEN ACADEMY</a>
+                    <p>ONLINE EDUCATION & LEARNING</p>
+                </div>
+                <div class="n-two">
+                    <div class="n-two-one"><ion-icon name="time-outline"></ion-icon></div>
+                    <div class="n-two-one">
+                        <p>Monday - Friday</p>
+                        <p>8:00AM - 8:00PM</p>
+                    </div>
+                </div>
+                <div class="n-two">
+                    <div class="n-two-one"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="n-two-one">
+                        <p>Call Us</p>
+                        <p>+91 7082814430</p>
+                    </div>
+                </div>
+                <div class="n-three">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="globe-outline"></ion-icon>
+                </div>
+            </div>
 
-            <div class="navbaar-two">
-                <div class="navbaar-two-one">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="french-a1.html">A1 Course</a></li>
-                        <li><a href="french-a2.html">A2 Course</a></li>
-                        <li><a href="french-b1.html">B1 Course</a></li>
-                        <li><a href="#" style="background-color: rgba(255,255,255,0.2);">About</a></li>
-                        <li><a href="https://www.wkdch.com/contact" target="_parent">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="navbaar-two-two">
-                    <a href="https://wa.me/917082814430">Get WhatsApp</a>
-                </div>
-            </div>
+            <div class="navbaar-two">
+                <div class="navbaar-two-one">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="french-a1.html">A1 Course</a></li>
+                        <li><a href="french-a2.html">A2 Course</a></li>
+                        <li><a href="french-b1.html">B1 Course</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="https://www.wkdch.com/contact" target="_parent">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="navbaar-two-two">
+                    <a href="https://wa.me/917082814430">Get WhatsApp</a>
+                </div>
+            </div>
 
-            <!-- About Banner Title Area -->
-            <div class="about-title-section">
-                <h1>About Our Academy</h1>
-                <p>Empowering Students to Master Foreign Languages with Confidence</p>
-            </div>
+            <div class="hero-container">
+                <div class="header-one">
+                    <p>WELCOME TO <b>WILLKOMMEN</b></p>
+                    <h1>Best Foreign Language Online<br> Education Expertise</h1>
+                    <p>Haryana's Top Rated Academy</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.wkdch.germanguru" class="btn btn-secondary">GET APP NOW ! &#10142;</a>
+                    <a href="https://www.wkdch.com/french" target="_blank" class="btn btn-primary">VIEW COURSE &#10142;</a>
+                </div>
+                <div class="hero-image-div">
+                    <img src="images/Rakesh Sir.jpeg" alt="Rakesh Sir">    
+                </div>
+            </div>
 
-        </div>
-    </div>
+        </div>
+    </div>
 
-    <!-- Section: Our Story -->
-    <div class="story-section">
-        <div class="story-main">
-            <div class="story-text">
-                <h2>Our Story & Journey</h2>
-                <p>Willkommen Deutsch Academy is the premier foreign language institute in Haryana, dedicated to providing top-notch language coaching. Under the dynamic leadership and guidance of Rajesh Sir, our academy has broken traditional barriers to make foreign language learning conversational, fun, and highly career-oriented.</p>
-                <p>We specialized originally in pioneering interactive modules that serve both online and offline formats. Whether you are looking to build corporate value, travel overseas, or crack global exams like DELF/TEF, we maintain tailored curricula matching individual student speeds and requirements perfectly.</p>
-            </div>
-            <div class="story-image">
-                <img src="https://elanguagestudio.com/theme/images/welcome-students.webp" alt="Willkommen Students Class">
-            </div>
-        </div>
-    </div>
+    <div class="two">
+        <div class="two-main">
+            <div class="two-main-one">
+                <img src="images/app.jpeg" alt="Academy Layout">
+            </div>
+            <div class="two-main-two">
+                <div class="t-m-t-o">
+                    <p style="color: #1934af; font-weight: bold; margin-bottom: 5px;">LEARN ANYTHING</p>
+                    <h1 style="margin-bottom: 20px;">Benefits About Online Learning Expertise</h1>
+                </div> 
+                <div class="t-m-t-one">
+                    <h2>Live Interactive Classes:</h2>
+                    <p>No boring pre-recorded videos. Learn live, ask questions instantly, and practice speaking with your trainer.</p>
+                </div>
+                <div class="t-m-t-one">
+                    <h2>Flexible Batches:</h2>
+                    <p>Weekend and weekday options available so your job or college routine doesn't get disturbed.</p>
+                </div>
+                <div class="t-m-t-one">
+                    <h2>Study Material Included:</h2>
+                    <p>Get free access to digital PDFs, grammar worksheets, vocabulary flashcards, and practice tests.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Section: Counters Stats -->
-    <div class="three">
-        <div class="three-main">
-            <div class="three-one">
-                <div class="three-one-icon"><ion-icon name="book-outline"></ion-icon></div>
-                <div>
-                    <h2>1587+</h2>
-                    <p>Happy Students</p>
-                </div>
-            </div>
-            <div class="three-one">
-                <div class="three-one-icon"><ion-icon name="laptop-outline"></ion-icon></div>
-                <div>
-                    <h2>30+</h2>
-                    <p>COURSES</p>
-                </div>
-            </div>
-            <div class="three-one">
-                <div class="three-one-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
-                <div>
-                    <h2>17+</h2>
-                    <p>Years Experience</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="three">
+        <div class="three-main">
+            <div class="three-one">
+                <div class="three-one-icon"><ion-icon name="book-outline"></ion-icon></div>
+                <div>
+                    <h2>1587+</h2>
+                    <p>Happy Students</p>
+                </div>
+            </div>
+            <div class="three-one">
+                <div class="three-one-icon"><ion-icon name="laptop-outline"></ion-icon></div>
+                <div>
+                    <h2>30+</h2>
+                    <p>COURSES</p>
+                </div>
+            </div>
+            <div class="three-one">
+                <div class="three-one-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+                <div>
+                    <h2>17+</h2>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Section: Core Principles (Vision/Mission) -->
-    <div class="vision-section">
-        <div class="vision-div">
-            <div class="vision-main">
-                
-                <div class="vision-box">
-                    <ion-icon name="rocket-outline"></ion-icon>
-                    <h3>Our Mission</h3>
-                    <p>To demystify foreign languages and make quality international curriculum accessible to students throughout Haryana, paving direct ways to global educational and career prospects.</p>
-                </div>
+    <div class="four">
+        <div class="four-div">
+            <div class="f-one">
+                <p style="color: #1934af; font-weight: bold;">OUR COURSES</p>
+                <h2>Explore Our Popular Online Courses</h2>
+            </div> 
+            <div class="four-main">
+                <div class="four-one">
+                    <h3>A1 Beginner</h3>
+                    <p>Start from zero. Build core vocabulary and survival phrases.</p>
+                    <ul>
+                        <li>Introduce yourself, family, work</li>
+                        <li>Order food, ask for prices & directions</li>
+                        <li>Grammar: articles, present tense</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join A1</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
+                </div>
+                <div class="four-one">
+                    <h3>A2 Elementary</h3>
+                    <p>Daily-life conversations with more confidence.</p>
+                    <ul>
+                        <li>Talk about routine & experiences</li>
+                        <li>Read short texts & emails</li>
+                        <li>Grammar: past tense & verbs</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join A2</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
+                </div>
+                <div class="four-one">
+                    <h3>B1 Intermediate</h3>
+                    <p>Discuss opinions, handle travel & work situations.</p>
+                    <ul>
+                        <li>Narrate events & viewpoints</li>
+                        <li>Write formal emails & summaries</li>
+                        <li>Grammar: complex structures</li>
+                    </ul>
+                    <div class="four-button">
+                        <a class="a-button" href="#">Join B1</a>
+                        <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="vision-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                    <h3>Our Vision</h3>
-                    <p>To establish an educational landscape where language is no longer a barrier to international growth, establishing a standard for live interactive training centers.</p>
-                </div>
+    <div class="five">
+        <div class="five-main">
+            <div class="five-one">
+                <p style="color: #0c14fa; font-weight: bold;">OUR PRICING</p>
+                <h2>Pricing & Packages</h2>
+            </div>
+            <div class="five-two">
+                <div class="five-two-one">
+                    <h4>A1 French Course</h4>
+                    <h3>&#8377; 20,000</h3>
+                    <p>Focus on building a solid foundation in the basics. You will learn essential vocabulary, common phrases, and fundamentals of grammar.</p>
+                   <a class="a-button" href="french-a1.html">Join A1</a> <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                </div>
+                <div class="five-two-one">
+                    <h4>A2 French Course</h4>
+                    <h3>&#8377; 25,000</h3>
+                    <p>Learn how to understand and use basic French sentences and expressions related to daily life like shopping and employment.</p>
+                    <a class="a-button" href="french-a2.html">Join A2</a> <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                </div>
+                <div class="five-two-one">
+                    <h4>B1 French Course</h4>
+                    <h3>&#8377; 30,000</h3>
+                    <p>Understand standard conversations encountered in office, school, or travel settings. Easily handle situations while traveling.</p>
+                   <a class="a-button" href="french-b1.html">Join B1</a> <a class="ab-button" href="https://www.youtube.com/@WillkommenDeutsch">Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="vision-box">
-                    <ion-icon name="ribbon-outline"></ion-icon>
-                    <h3>Our Value</h3>
-                    <p>We strictly emphasize personal attention, continuous feedback loops, innovative worksheets, and absolute student support starting right from day zero.</p>
-                </div>
+    <div class="six">
+        <div class="six-main">
+            <div class="six-one">
+                <div class="six-o-one">
+                    <img src="images/Rakesh Sir.jpeg" alt="Rajesh Sir">
+                </div>
+                <div class="six-two">
+                    <h2>Rajesh Sir</h2>
+                    <h3>10+ Years Profile (French)</h3>
+                    <p><ion-icon name="logo-whatsapp" style="color: green; vertical-align: middle;"></ion-icon> +91 7082814430</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            </div>
-        </div>
-    </div>
+    <div class="seven">
+        <div class="seven-main">
+            <div class="seven-one">
+                <div class="seven-one-o">
+                    <img src="https://elanguagestudio.com/theme/images/welcome-students.webp" alt="Welcome Students">
+                </div>
+            </div>
+            <div class="seven-two">
+                <div class="seven-two-one">
+                    <h2>Why Willkommen Deutsch Academy is the best foreign language institute in Haryana?</h2> 
+                    <p>Willkommen Deutsch Academy is the premier foreign language institute in Haryana. With its highly qualified and experienced faculty, innovative teaching methods for French learning, and commitment to student success, it has become the go-to destination for anyone seeking to learn Foreign Languages. The institute has a team of highly qualified instructors who create a supportive and engaging learning environment.</p>
+                </div>
+                <div class="seven-two-two">
+                    <h3><ion-icon name="accessibility-outline"></ion-icon> Well qualified & experienced language faculty in Haryana</h3>
+                    <h3><ion-icon name="language-outline"></ion-icon> Innovative foreign language teaching methods</h3>
+                    <h3><ion-icon name="book-outline"></ion-icon> Individual attention, support and offline classes</h3>
+                    <h3><ion-icon name="laptop-outline"></ion-icon> Flexible course options & scheduling</h3>
+                    <h3><ion-icon name="planet-outline"></ion-icon> Well-rounded language courses</h3>
+                    <h3><ion-icon name="call-outline"></ion-icon> Consistent positive feedback as the best Academy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer Area -->
-    <div class="footer">
-        &copy; 2026 Willkommen Academy. All Rights Reserved.
-    </div>
+    <div class="eight">
+        <div class="eight-main">
+            <div class="eight-one">
+                <h2>Upcoming - Language Batches, Exams & Webinars</h2>
+                <p>Details of Upcoming Foreign Language Learning Batches & Exams. Explore a world of possibilities with our upcoming online & offline French language courses and test preparation settings in Haryana.</p>
+            </div>
+            <div class="eight-two">
+                <a class="aa" href="#"><ion-icon name="alarm-outline"></ion-icon> Upcoming Batches</a>
+                <a href="#"><ion-icon name="book-outline"></ion-icon> Upcoming Exams</a>
+                <a href="#"><ion-icon name="videocam-outline"></ion-icon> Upcoming Webinars</a>
+            </div>
+            <div class="eight-three-two">
+                <h3>Batch A1: Starts Next Monday</h3>
+                <h3>Exam Prep: DELF/TEF Batches</h3>
+                <h3>Free Webinar: Study in France/Canada</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="nine">
+        <div class="nine-main">
+            <div class="nine-one">
+                <h2>Our Location</h2>
+                <p>Willkommen Academy, Hisar, Haryana, India</p>
+            </div>
+            <div class="nine-one">
+                <h2>Call Us</h2>
+                <p>+91 7082814430</p>
+            </div>
+            <div class="nine-one">
+                <h2>Email Us</h2>
+                <p>info@bestfrenchlanguagecourse.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-div">
+            <h2>Quick Inquiry Form</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <button type="submit">Submit Now</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Willkommen Academy. All Rights Reserved.
+    </div>
 
 </body>
 </html>
