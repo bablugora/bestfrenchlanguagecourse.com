@@ -35,10 +35,10 @@
         }
 
         /* --- Navbar & Hero Section --- */
-        .navbaar {
+        .navbar {
             width: 100%;
             height: auto;
-            padding-top: 50px; /* Space for fixed banner */
+            padding-top: 60px; /* Thoda space badhaya taaki fixed banner content na chupaye */
             padding-bottom: 50px;
             color: white;
             background-attachment: fixed;
@@ -47,14 +47,14 @@
             background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(https://cadglobal.uk/wp-content/uploads/2024/05/bg-1024x475.webp);
         }
 
-        .navbaar-body {
+        .navbar-body {
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .navbaar-one {
+        .navbar-one {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -108,7 +108,7 @@
             background-color: rgb(63, 128, 207);
         }
 
-        .navbaar-two {
+        .navbar-two {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -120,13 +120,13 @@
             overflow: hidden;
         }
 
-        .navbaar-two-one ul {
+        .navbar-two-one ul {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
         }
 
-        .navbaar-two-one a {
+        .navbar-two-one a {
             text-decoration: none;
             padding: 15px 20px;
             color: white;
@@ -134,15 +134,15 @@
             transition: 0.3s;
         }
 
-        .navbaar-two-one a:hover {
+        .navbar-two-one a:hover {
             background-color: rgba(255,255,255,0.2);
         }
 
-        .navbaar-two-two {
+        .navbar-two-two {
             background-color: rgb(21, 135, 84);
         }
 
-        .navbaar-two-two a {
+        .navbar-two-two a {
             display: inline-block;
             padding: 15px 25px;
             text-decoration: none;
@@ -238,6 +238,7 @@
             transform: scale(1.03);
         }
 
+        /* Galti Sudhari: t-m-t-one ko sahi kiya */
         .t-m-t-one {
             background-color: white;
             padding: 20px;
@@ -618,6 +619,7 @@
             padding: 12px;
             border: none;
             border-radius: 8px;
+            color: #333;
         }
 
         .form-div button {
@@ -645,18 +647,18 @@
 
         /* --- Responsive Media Queries --- */
         @media screen and (max-width: 992px) {
-            .navbaar-one { justify-content: center; text-align: center; }
-            .navbaar-two-one ul { justify-content: center; }
+            .navbar-one { justify-content: center; text-align: center; }
+            .navbar-two-one ul { justify-content: center; }
             .hero-container { flex-direction: column; text-align: center; }
             .hero-image-div { max-width: 100%; }
             .seven-main { flex-direction: column; }
         }
 
         @media screen and (max-width: 768px) {
-            .navbaar-two { flex-direction: column; }
-            .navbaar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
-            .navbaar-two-one a { width: 100%; padding: 12px; }
-            .navbaar-two-two { width: 100%; text-align: center; }
+            .navbar-two { flex-direction: column; }
+            .navbar-two-one ul { flex-direction: column; text-align: center; width: 100%; }
+            .navbar-two-one a { width: 100%; padding: 12px; }
+            .navbar-two-two { width: 100%; text-align: center; }
             .header-one h1 { font-size: 32px; }
             .eight-three-two { flex-direction: column; }
         }
@@ -669,10 +671,10 @@
         /: Website on testing. Please contact: +91 7082814430
     </div>
 
-    <div class="navbaar">
-        <div class="navbaar-body">
+    <div class="navbar">
+        <div class="navbar-body">
             
-            <div class="navbaar-one">
+            <div class="navbar-one">
                 <div class="n-one">
                     <a href="#">WILLKOMMEN ACADEMY</a>
                     <p>ONLINE EDUCATION & LEARNING</p>
@@ -699,8 +701,8 @@
                 </div>
             </div>
 
-            <div class="navbaar-two">
-                <div class="navbaar-two-one">
+            <div class="navbar-two">
+                <div class="navbar-two-one">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">All Courses</a></li>
@@ -711,7 +713,7 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div class="navbaar-two-two">
+                <div class="navbar-two-two">
                     <a href="https://wa.me/917082814430">Get WhatsApp</a>
                 </div>
             </div>
@@ -738,9 +740,9 @@
                 <img src="images/academy.jpg" alt="Academy Layout">
             </div>
             <div class="two-main-two">
-                <div class="t-m-t-o">
+                <div style="margin-bottom: 20px;">
                     <p style="color: #1934af; font-weight: bold; margin-bottom: 5px;">LEARN ANYTHING</p>
-                    <h1 style="margin-bottom: 20px;">Benefits About Online Learning Expertise</h1>
+                    <h1>Benefits About Online Learning Expertise</h1>
                 </div> 
                 <div class="t-m-t-one">
                     <h2>Live Interactive Classes:</h2>
@@ -941,10 +943,12 @@
     <div class="form">
         <div class="form-div">
             <h2>Quick Inquiry Form</h2>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone Number" required>
-            <button type="submit">Submit Now</button>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <button type="submit">Submit Now</button>
+            </form>
         </div>
     </div>
 
