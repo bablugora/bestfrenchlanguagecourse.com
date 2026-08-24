@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://bestfrenchlanguagecourse.com/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
@@ -12,21 +12,21 @@
   <!-- Course Pages -->
   <url>
     <loc>https://bestfrenchlanguagecourse.com/french-a1.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://bestfrenchlanguagecourse.com/french-a2.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://bestfrenchlanguagecourse.com/french-b1.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -34,14 +34,14 @@
   <!-- About & Contact -->
   <url>
     <loc>https://bestfrenchlanguagecourse.com/about.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://bestfrenchlanguagecourse.com/contact.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
